@@ -1,0 +1,13 @@
+name: access_id_workflow
+
+on: push
+
+jobs:
+  access_id_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        run: actions/checkout@v4
+
+      - name: Variable Access
+        run: echo "The ACCESS_ID is ${{ vars.ACCESS_ID }}"
