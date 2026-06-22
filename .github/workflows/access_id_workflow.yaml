@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Variable Access
         run: echo "The ACCESS_ID is ${{ vars.ACCESS_ID }}"
